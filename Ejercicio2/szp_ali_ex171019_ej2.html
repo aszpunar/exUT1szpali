@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            text-align:center;
+        }
+        input{
+            width: 100%;
+        }
+    </style>
+    <title>Comparativa-szpali</title>
+</head>
+<body>
+    <h1 style="text-align: center;" id="encaId">Szpali-Comparativa de coches</h1>
+    <br>
+    <p style="text-align: center;" id="pId">Szpali-Vamos a comparar estos coches</p>
+    <br><br>
+    <ol id="listaOrdenadaId">
+        <li>Skoda-szpali-Superb</li>
+        <li>Skoda-szpali-Kodiaq</li>
+        <li>Renault-szpali-Zoe</li>
+        <li>Renault-szpali-Espace</li>
+    </ol>
+    <br><br>
+    <video id="videoId" style="display: block;margin: auto;" autoplay controls loop="loop">
+        <source src="SkodaSuperb.mp4" type="video/mp4">;
+        <source src="SkodaSuperb.ogv" type="video/ogv">;
+        <source src="SkodaSuperb.webm" type="video/webm">;
+    </video>
+    <br><br>
+    <table style="border: 1px solid black;text-align:center;">
+        <caption>
+        </caption>
+        <thead>
+            <th>Modelos de coches</th>
+            <th>Skoda</th>
+            <th>Renault</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4"></td>
+                <!-- <td>Superb TDI 150 CV</td>
+                <td>Zoe Entry 88 CV</td> -->
+            </tr>
+            <tr>
+                <td>Superb TDI 150 CV<img src="SkodaSuperb.jpg" alt="Skoda1"></td>
+                <td>Zoe Entry 88 CV<img src="RenaultZOE.jpg" alt="Skoda1"></td>
+            </tr>
+            <tr>
+                <td>Kodiaq 2.0 TDI 150CV<img src="SkodaKodiaq.jpg" alt="Skoda1"></td>
+                <td>Espace 1.6 DCII 30 Life 6V<img src="RenaultEspace.jpg" alt="Skoda1"></td>
+            </tr>
+        </tbody>
+        <tfoot >
+            <td colspan="3">Esto es el pie de tabla: 
+                Datos tomados de autofacil.es
+                Nombre de fichero de examen szp_ali_ex171019_ej2.html
+            </td>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <form action="">
+        <fieldset>
+            <legend>Encuesta</legend>
+            <h3>Rellena los datos con tu modelo de coche favorito</h3>
+            <label for="marcaId">Marca:</label><br>
+            <input type="text" name="marca" id="marcaId" required><br>
+            <label for="modeloId">Modelo:</label><br>
+            <input type="text" name="modelo" id="modeloId" required><br>
+            <label for="cvId">CV:</label><br>
+            <input type="number" name="cv" id="cvId" required><br>
+            <label for="colorId">Color favorito para el coche</label><br>
+            <input type="color" name="color" id="colorId" required><br>
+            <label for="identificadorId">Identificador de usuario</label><br>
+            <input type="text" name="identificador" id="identificadorId"
+            pattern="[A-Z]{2}[0-9]{4}[a-z][0-9]" maxlength="8" title="[A-Z]{2}[0-9]{4}[a-z][0-9]=
+            DOS mayúsculas, CUATRO números, UNA minúscula, UN número" required>
+            <br><br>
+            <input type="submit" value="Enviar mis opiniones">
+            <span>Gracias. Fichero de examen szp_ali_171019.html</span>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
